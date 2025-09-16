@@ -82,9 +82,9 @@ class SoilParameters(BaseModel):
     temperature: float = Field(..., description="Temperature in Celsius", ge=0, le=50)
     humidity: float = Field(..., description="Humidity percentage", ge=0, le=100)
     wind_speed: float = Field(..., description="Wind speed in km/h", ge=0, le=50)
-    N: float = Field(..., description="Nitrogen content in soil", ge=0, le=200)
-    P: float = Field(..., description="Phosphorus content in soil", ge=0, le=200)
-    K: float = Field(..., description="Potassium content in soil", ge=0, le=200)
+    N: float = Field(..., description="Nitrogen content in soil", ge=0, le=500)
+    P: float = Field(..., description="Phosphorus content in soil", ge=0, le=500)
+    K: float = Field(..., description="Potassium content in soil", ge=0, le=500)
     annual_rainfall: float = Field(..., description="Annual rainfall in mm", ge=0, le=2000)
 
     class Config:
