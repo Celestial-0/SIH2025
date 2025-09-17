@@ -16,11 +16,10 @@ app.use(cookieParser());
 
 
 //routes import
-// import userRouter from './routes/user.routes.js'
-
+import authRouter from './src/routes/auth.routes';
 
 //routes declaration
-// app.use("/api/v1/healthcheck", healthcheckRouter)
+app.use("/api/v1/auth", authRouter);
 
 
 export { app };
